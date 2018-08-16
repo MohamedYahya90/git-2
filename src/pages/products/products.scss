@@ -1,0 +1,74 @@
+page-home {
+
+}
+body {
+  font: 13px Arial, Helvetica, sans-serif;
+	color: #1e1e1e;
+}
+#container {
+	width:auto;
+	margin: 20px auto;
+}
+#accordion {
+	margin-top: 20px;
+}
+#accordion .item {
+	width: auto;
+	height: 25px; /* height = total height of A child element */ 
+	overflow:hidden;
+  
+	transition: height ease-in-out 500ms; /* css3 transition */
+	-o-transition: height ease-in-out 500ms;
+	-moz-transition: height ease-in-out 500ms;
+	-webkit-transition: height ease-in-out 500ms;
+	
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	margin-bottom: 2px;
+}
+#accordion a {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	
+	background: #a67af8;
+	padding: 5px;
+	color: #720606;
+	text-decoration: none;
+}
+#accordion p {
+	height: 150px;
+	padding: 5px;
+}
+#accordion div:hover {
+	height: 180px; /* height = total height of A and P elements */
+}
+#accordion div:hover a {
+	border-bottom: 1px solid rgb(49, 186, 240);
+}
+
+.back{
+	background-color: #04000a
+}
+background-image{
+	width: auto;
+	height: auto
+}
+.quote{
+	color:rgb(119, 119, 119);
+	font-weight:300;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	box-shadow:rgb(204, 204, 204) -5px 0px 0px 0px;
+	font-style:italic;
+	margin-top:20px;
+	margin-right:30px;
+	margin-bottom:20px;
+	margin-left:30px;
+	background-color: #320585
+  }

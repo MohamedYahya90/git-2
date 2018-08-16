@@ -1,0 +1,130 @@
+page-about {
+
+}
+
+.container-width{
+    width:90%;
+    max-width:1150px;
+    margin-top:0px;
+    margin-right:auto;
+    margin-bottom:0px;
+    margin-left:auto;
+  }
+  .bdg-sect{
+    padding-top:100px;
+    padding-bottom:100px;
+    font-family:Helvetica, serif;
+    background-color:rgb(130, 223, 240);
+  }
+  .bdg-title{
+    text-align:center;
+    font-size:2em;
+    margin-bottom:55px;
+    color:rgb(85, 85, 85);
+  }
+  .badges{
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap:wrap;
+  }
+  .badge{
+    width:290px;
+    font-family:Helvetica, serif;
+    background-color:white;
+    margin-bottom:30px;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    border-bottom-left-radius:3px;
+    font-weight:100;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    text-align:center;
+  }
+  .badge-header{
+    height:115px;
+    background-image:url("//grapesjs.com/img/bg-gr-v.png"), url("//grapesjs.com/img/work-desk.jpg");
+    background-position-x:left, center;
+    background-position-y:top, center;
+    background-attachment:scroll, fixed;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+  .badge-name{
+    font-size:1.4em;
+    margin-bottom:5px;
+  }
+  .badge-role{
+    color:rgb(119, 119, 119);
+    font-size:1em;
+    margin-bottom:25px;
+  }
+  .badge-desc{
+    font-size:0.85rem;
+    line-height:20px;
+  }
+  .badge-avatar{
+    width:100px;
+    height:100px;
+    border-top-left-radius:100%;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-bottom-left-radius:100%;
+    border-top-width:5px;
+    border-right-width:5px;
+    border-bottom-width:5px;
+    border-left-width:5px;
+    border-top-style:solid;
+    border-right-style:solid;
+    border-bottom-style:solid;
+    border-left-style:solid;
+    border-top-color:rgb(255, 255, 255);
+    border-right-color:rgb(255, 255, 255);
+    border-bottom-color:rgb(255, 255, 255);
+    border-left-color:rgb(255, 255, 255);
+    border-image-source:initial;
+    border-image-slice:initial;
+    border-image-width:initial;
+    border-image-outset:initial;
+    border-image-repeat:initial;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+    margin-top:-75px;
+    position:relative;
+  }
+  .badge-body{
+    margin-top:35px;
+    margin-right:10px;
+    margin-bottom:35px;
+    margin-left:10px;
+  }
+  .badge-foot{
+    color:rgb(255, 255, 255);
+    background-color:rgb(162, 144, 165);
+    padding-top:13px;
+    padding-bottom:13px;
+    display:flex;
+    justify-content:center;
+  }
+  .badge-link{
+    height:35px;
+    width:35px;
+    line-height:35px;
+    font-weight:700;
+    background-color:rgb(255, 255, 255);
+    color:rgb(162, 144, 165);
+    display:block;
+    border-top-left-radius:100%;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-bottom-left-radius:100%;
+    margin-top:0px;
+    margin-right:10px;
+    margin-bottom:0px;
+    margin-left:10px;
+  }

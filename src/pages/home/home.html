@@ -1,0 +1,37 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+ 
+  <ion-navbar>
+      <!-- <div text-center>
+          <img src="../../assets/imgs/logo_en.jpg" >
+      </div> -->
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background-image: url('assets/imgs/wallpapers.jpeg')">
+<img src="./assets/imgs/almaha3.jpg" id="img1" imageViewer/>
+
+<h1>About Us</h1>
+<h1>Introduction:</h1>
+<p>Al Maha established in Iraq during 1997 operating in Baghdad as a main hub of distribution across Iraq.
+
+  Al Maha has developed a high caliber team across Iraq since we believe that our people are the heart of our business. We do maintain yearly activities of training sessions to include sales team, merchandising team, IT team, analysis team and Finance.
+  
+  Al Maha has established a strong distribution network within Iraq by establishing 10 full operational branches supported by more than 250 fleet of distribution and delivery that covers different levels of trade supported with strong IT system and functions that to improve coverage andsustainable growth.</p>
+  <br>
+  <iframe width="100%" height="100%" [src]="san(vid)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <h1>Our Success:</h1>
+  <p>The reason of our success, we believe, lies in keeping alive our pioneering spirit and continually seeking improvements in Iraqi market and targeting the un-tapped opportunities.</p>
+
+  <button ion-button color="primary" block (click)="openPdf()">Open Pdf</button>
+</ion-content>

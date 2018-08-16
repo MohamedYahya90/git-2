@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-navbar>
+    
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Products</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-image: url('assets/imgs/img.jpg')">
+	The world is your oyster.
+	
+
+	<div padding >
+			<ion-segment [(ngModel)]="pet">
+				<ion-segment-button value="kittens" class="black">
+					Nestle
+				</ion-segment-button>
+				<ion-segment-button value="puppies">
+					Foster
+				</ion-segment-button>
+			</ion-segment>
+		</div>
+		
+		<div [ngSwitch]="pet">
+			<ion-list *ngSwitchCase="'puppies'" >
+				<ion-item *ngFor="let pic of im" class="back">
+					<ion-thumbnail item-start>
+						<img src="./assets/imgs/{{pic.image}}" imageViewer/>
+					</ion-thumbnail>
+					<h2>{{pic.title}}</h2>
+				</ion-item>
+			</ion-list>
+		
+			<ion-list *ngSwitchCase="'kittens'" class="back">
+				<ion-item *ngFor="let slide of slideData" class="back">
+					<ion-thumbnail item-start >
+							<img src="{{slide.image}}" imageViewer/>
+					</ion-thumbnail >
+					<h2>{{slide.title}}</h2>
+				</ion-item>
+			</ion-list>
+		</div>
+
+
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <div id="container">
+  <div id="accordion">
+		<div class="item">
+			<a navPush="AddItemPage">Products</a>
+			<p>click to view our Products.</p>
+		</div>
+		<div class="item">
+			<a>Highlight</a>
+			<p>The reason of our success, we believe, lies in keeping alive our pioneering spirit 
+				and continually seeking improvements in Iraqi market</p>
+		</div>
+		<div class="item">
+			<a>News</a>
+			<p>Al Maha has established a strong distribution network within Iraq by establishing 10 full operational branches</p>
+		</div>
+		<div class="item">
+			<a >Contact</a>
+			<p>Head Quarter
+				Erbil - Wazeran - near to American High School.
+				009647509322222
+				hr@almaha-iq.com
+				Sales@almaha-iq.com</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+<blockquote class="quote">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
+</blockquote>
+</ion-content>

@@ -1,0 +1,39 @@
+
+<ion-header>
+  <ion-navbar>
+    
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>New Offers</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding style="background-image: url('assets/imgs/wallpapers.jpeg')">
+  <h1>Here You Can See The New Offers </h1>
+  <p>Please connect to the internet</p>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list >
+    <ion-col col-sm-2 col-md-4 col-xl-6 *ngFor="let item of employeeList"  >         
+      <ion-item >
+          <ion-thumbnail item-start item-start>
+        <img-loader src="https://firebasestorage.googleapis.com/v0/b/my-ionic-bedde.appspot.com/o/images%2F{{item.name}}.jpg?alt=media&token=be89c991-d6b1-49bf-bb64-cf103c835002" useImg="true" imageViewer="https://firebasestorage.googleapis.com/v0/b/my-ionic-bedde.appspot.com/o/images%2F{{item.name}}.jpg?alt=media&token=be89c991-d6b1-49bf-bb64-cf103c835002"></img-loader>
+          </ion-thumbnail>
+      <h1> {{item.name}} </h1><h4>{{item.lname}}  valid until {{item.dept}}</h4>
+     <h2>The price is {{item.age}} $</h2>
+     <!-- <button (click)="deleteItem(item.key)">delete</button>  -->
+      </ion-item>
+      </ion-col>
+    
+</ion-list>
+
+<!-- <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let employee of employeeList">
+    <h2> {{ employee.name }} </h2>
+    <h3> Code: <strong>{{ employee.age }}</strong> </h3>
+  </ion-item>
+</ion-list>
+</ion-content> -->
